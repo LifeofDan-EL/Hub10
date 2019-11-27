@@ -14,6 +14,7 @@
     <string name="menu_work">Work</string>
     <string name="menu_about_us">About Us</string>
 
+    <string name="image_description">The banner for the</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="text_home">It\'s a pleasure to have you on our page, HUB10 is a smart office designed with a fluid workspace to create a community of entrepreneurs and tech experts and enthusiasts involved in the web, software, mobile app and software development, system analysis and design, creative designs and arts, graphic design, branding, etc. We also have a developer area plus a startup square that focuses on the growing startup and technology ecosystem. It offers coworking units from different categories ranging from Hot Desk, Dedicated Desk, Private Offices, and Event Space. ​ It is open to all individuals and those that enjoy working in groups and companies for projects and seminars and courses. ​ HUB10 runs 24hrs for members and reception hours for non-members.</string>
 </resources>
