@@ -19,7 +19,7 @@ public class ConnectFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
-        View v = inflater.inflate(R.layout.fragment_train, container,false);
+        View v = inflater.inflate(R.layout.fragment_connect, container,false);
         WebView webView = v.findViewById(R.id.webview_connect);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
