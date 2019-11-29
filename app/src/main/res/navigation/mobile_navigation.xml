@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.danielanomfueme.hub10.ui.home.HomeFragment"
+        android:name="com.danielanomfueme.hub10.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_work"
-        android:name="com.danielanomfueme.hub10.ui.work.WorkFragment"
+        android:name="com.danielanomfueme.hub10.WorkFragment"
         android:label="@string/menu_work"
         tools:layout="@layout/fragment_work" />
 
@@ -21,15 +21,21 @@
 
     <fragment
         android:id="@+id/nav_train"
-        android:name="com.danielanomfueme.hub10.ui.train.TrainFragment"
+        android:name="com.danielanomfueme.hub10.TrainFragment"
         android:label="@string/menu_train"
         tools:layout="@layout/fragment_train" />
 
 
+    <fragment
+        android:id="@+id/nav_connect"
+        android:name="com.danielanomfueme.hub10.ConnectFragment"
+        android:label="@string/menu_connect"
+        tools:layout="@layout/fragment_connect" />
+
 
     <fragment
         android:id="@+id/nav_about_us"
-        android:name="com.danielanomfueme.hub10.ui.about_us.AboutUsFragment"
+        android:name="com.danielanomfueme.hub10.AboutUsFragment"
         android:label="@string/menu_about_us"
         tools:layout="@layout/fragment_about_us" />
 </navigation>

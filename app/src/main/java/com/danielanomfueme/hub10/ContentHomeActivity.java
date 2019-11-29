@@ -9,6 +9,6 @@ public class ContentHomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home_content);
+        setContentView(R.layout.fragment_connect);
     }
 }

@@ -1,9 +1,11 @@
-package com.danielanomfueme.hub10.ui.train;
+package com.danielanomfueme.hub10;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -16,20 +18,20 @@ import com.danielanomfueme.hub10.R;
 
 public class TrainFragment extends Fragment {
 
-    private TrainViewModel toolsViewModel;
+     public TrainFragment(){
+     }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        toolsViewModel =
-                ViewModelProviders.of(this).get(TrainViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_train, container, false);
-        final TextView textView = root.findViewById(R.id.text_tools);
-        toolsViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
+
+
+        View v = inflater.inflate(R.layout.fragment_train, container,false);
+        WebView webView = v.findViewById(R.id.webview_train);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl( "https://www.hubten.net/train");
+        return v;
     }
+
+
 }

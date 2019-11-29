@@ -1,9 +1,11 @@
-package com.danielanomfueme.hub10.ui.home;
+package com.danielanomfueme.hub10;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -17,21 +19,22 @@ import com.danielanomfueme.hub10.R;
 
 public class HomeFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
+
     private RecyclerView mRecyclerView;
+
+    public HomeFragment(){
+    }
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_home, container, false);
-        final TextView textView = root.findViewById(R.id.text_welcome);
-        homeViewModel.getText().observe(this, new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
-        return root;
+
+
+        View v = inflater.inflate(R.layout.fragment_train, container,false);
+        WebView webView = v.findViewById(R.id.webview_train);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.setWebViewClient(new WebViewClient());
+        webView.loadUrl( "https://www.hubten.net/");
+        return v;
     }
+
 }

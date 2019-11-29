@@ -12,19 +12,12 @@
     <string name="menu_train">Train</string>
     <string name="menu_home">Home</string>
     <string name="menu_work">Work</string>
+    <string name="menu_connect">Connect</string>
     <string name="menu_about_us">About Us</string>
 
-    // ​
+
     <string name="image_description">The banner for the</string>
     <string name="title_activity_main">MainActivity</string>
 
-    // Home Fragment Texts
-    <string name="text_welcome_message1">It\'s a pleasure to have you on our page, HUB10 is a smart office designed with a fluid workspace to
-        create a community of entrepreneurs and tech experts and enthusiasts involved in the web, software, mobile app and software development,
-        system analysis and design, creative designs and arts, graphic design, branding, etc. </string>
-    <string name="text_welcome_message2"> We also have a developer area plus a startup square that focuses on the growing startup and technology ecosystem. </string>
-    <string name="text_welcome_message3"> It offers co-working units from different categories ranging from Hot Desk, Dedicated Desk, Private Offices, and Event Space.</string>
-    <string name="text_welcome_message4">It is open to all individuals and those that enjoy working in groups and companies for projects and seminars and courses. </string>
-    <string name="text_welcome_message5"> ​ HUB10 runs 24hrs for members and reception hours for non-members. </string>
-    <string name="welcome_to_hub10">Welcome to Hub10</string>
+
 </resources>
