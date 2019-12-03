@@ -20,8 +20,8 @@ public class HomeFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
 
-        View v = inflater.inflate(R.layout.fragment_train, container,false);
-        WebView webView = v.findViewById(R.id.webview_train);
+        View v = inflater.inflate(R.layout.fragment_home, container,false);
+        WebView webView = v.findViewById(R.id.webview_home);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl( "https://www.hubten.net/");
