@@ -6,21 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.TextView;
-
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
-import androidx.lifecycle.ViewModelProviders;
-import androidx.recyclerview.widget.RecyclerView;
 
-import com.danielanomfueme.hub10.R;
 
 public class HomeFragment extends Fragment {
 
-
-    private RecyclerView mRecyclerView;
 
     public HomeFragment(){
     }
